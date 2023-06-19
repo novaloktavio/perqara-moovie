@@ -1,13 +1,26 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require('tailwindcss/colors');
 
+const primary = {
+  DEFAULT: '#1E232B',
+  400: '#292e36',
+  500: '#1E232B',
+}
+
+const grey = {
+  DEFAULT: '#E5E5E5',
+  500: '#E5E5E5',
+  600: '#929292',
+}
+
 module.exports = {
   theme: {
     extend: {
       colors: {
         black: '#000000',
-        primary: '#1E232B',
-        secondary: '#292e36',
+        primary,
+        secondary: '#E74C3C',
+        grey: grey,
         info: colors.sky,
         success: colors.emerald,
         warning: colors.yellow,
