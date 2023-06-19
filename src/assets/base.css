@@ -14,3 +14,43 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.btn {
+  @apply cursor-pointer rounded border font-semibold inline-flex gap-2 items-center justify-center
+  transition duration-300 whitespace-nowrap
+  focus:ring focus:ring-offset-2 focus:outline-none
+  disabled:cursor-not-allowed
+}
+
+.btn--rounded {
+  @apply rounded-full;
+}
+
+/* variants */
+
+.btn-primary {
+  @apply bg-black bg-opacity-20 border-black border-opacity-20 text-white
+  hover:bg-opacity-80
+  active:bg-opacity-80;
+}
+
+.btn-secondary {
+  @apply bg-secondary border-secondary text-white
+  hover:bg-opacity-80
+  active:bg-opacity-80
+    disabled:bg-gray-400 disabled:border-gray-400
+    disabled:hover:bg-gray-400;
+}
+
+/* sizes */
+.btn-sm {
+  @apply text-sm px-2 h-[28px];
+}
+
+.btn-md {
+  @apply text-base px-4 h-[38px];
+}
+
+.btn-lg {
+  @apply text-lg px-5 h-[46px];
+}
