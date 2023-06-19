@@ -9,6 +9,10 @@
   ],
   "compilerOptions": {
     "composite": true,
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"]
+    },
     "module": "ESNext",
     "types": ["node"]
   }
