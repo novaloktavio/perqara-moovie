@@ -16,11 +16,11 @@ onMounted(() => {
 <template>
   <h2 class="text-white"> Slider >></h2>
   <div class="discover-movies">
-    <div class="px-20 py-11">
+    <div class="px-5 lg:px-20 py-11">
       <div class="bg-secondary w-[112px] h-[6px] mb-2">
       </div>
       <div class="flex flex-wrap justify-between relative mb-8">
-        <p class="font-semibold text-grey text-2xl">Discover Movies</p>
+        <p class="font-semibold text-grey text-2xl lg:mb-0 mb-4">Discover Movies</p>
         <div class="flex gap-2">
           <v-button variant="secondary" size="xs px-3" rounded>
             Popularity

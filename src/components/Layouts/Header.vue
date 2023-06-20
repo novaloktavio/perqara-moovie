@@ -38,7 +38,7 @@ const search = ref('')
           </a>
 				</li>
 				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
-					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="#">Movies</a>
+					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="/movies">Movies</a>
 				</li>
 				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
 					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="#">TV Shows</a>

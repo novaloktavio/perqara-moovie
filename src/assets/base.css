@@ -54,3 +54,21 @@ body {
 .btn-lg {
   @apply text-lg px-5 h-[46px];
 }
+
+
+/* checkbox */
+.v-field-input-control[type='checkbox'] {
+  @apply rounded duration-300 checked:text-primary text-primary border-grey checked:border-primary
+  disabled:cursor-not-allowed disabled:text-grey disabled:border-grey
+  disabled:ring-grey disabled:bg-grey-600
+  ;
+}
+
+.v-field-input-control[type='checkbox'].v-field-input-control--error:not(:checked),
+.v-field-input-control[type='radio'].v-field-input-control--error:not(:checked) {
+  @apply border-red-500 ring-red-500;
+}
+
+.v-field--checkbox .v-field-label {
+  @apply mb-0;
+}
