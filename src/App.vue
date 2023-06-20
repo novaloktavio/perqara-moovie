@@ -5,7 +5,7 @@ import Footer from '@/components/Layouts/Footer.vue'
 
 <template>
   <Header></Header>
-  <router-view />
+  <router-view :key="$route.fullPath" />
   <Footer></Footer>
 </template>
 

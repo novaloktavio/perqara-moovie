@@ -10,7 +10,9 @@ const search = ref('')
 <template>
   <nav class="sticky top-0 flex gap-6 items-center justify-between px-20 z-10 flex-wrap bg-grey-darkest p-3 bg-primary-400 shadow-lg">
 		<div class="grow flex items-center flex-no-shrink text-white gap-6">
-      <img src="@/assets/logo.svg" class="mr-3"/>
+      <a href="/">
+        <img src="@/assets/logo.svg" class="mr-3"/>
+      </a>
       <div class="grow px-2 flex items-center bg-black bg-opacity-10 focus:outline-none focus:border-primary focus:ring-primary rounded-md sm:text-sm focus:ring-1">
         <v-icon name="ic:baseline-movie-creation" class="w-6 h-6 text-white text-opacity-10" />
         <input
@@ -31,19 +33,19 @@ const search = ref('')
 
 		<div class="w-full flex-none lg:flex lg:items-center lg:w-auto pt-6 lg:pt-0 gap-3" id="nav-content">
 			<ul class="lg:flex flex-nowrap items-center uppercase gap-3 text-md text-white">
-				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
+				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition cursor-pointer" to="#">
 					<a class="font-semibold inline-block no-underline" href="#">
             <VIcon name="mingcute:grid-fill" class="w-5 h-5 text-white mr-1"></VIcon>
             Categories
           </a>
 				</li>
-				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
+				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition cursor-pointer" to="/movies">
 					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="/movies">Movies</a>
 				</li>
-				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
+				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition cursor-pointer" to="#">
 					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="#">TV Shows</a>
 				</li>
-				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition">
+				<li class="px-4 py-2 rounded-md grow hover:bg-primary transition cursor-pointer" to="#">
 					<a class="font-semibold inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline" href="#">Login</a>
 				</li>
 			</ul>

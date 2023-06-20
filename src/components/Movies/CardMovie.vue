@@ -6,27 +6,21 @@ import VIcon from '../VIcon/VIcon.vue'
 import router from '@/router'
 
 const props = defineProps({
-  title: {
-    type: String,
-    default: 'Movie Title',
-  },
-  rating: {
-    type: String,
-    default: '5.0',
-  },
-  year: {
-    type: String || Number,
-    default: '2020',
-  },
-  id: {
-    type: String || Number,
-    default: '',
+  item: {
+    type: Object,
+    default: {
+      title: 'Movie Title',
+      rating: '9.9',
+      year: '1999',
+      id: '1',
+      genre: 'Movie Genre',
+    }
   },
 })
-const { title, rating, year, id } = toRefs(props)
+const { item } = toRefs(props)
 
 const goToDetail = () => {
-  router.push(`/movies/${id.value}`)
+  router.push(`/movies/${item.value.id}`)
 }
 </script>
 
@@ -41,7 +35,7 @@ const goToDetail = () => {
     />
     <div class="absolute right-0 top-0 text-right bg-primary bg-opacity-80 px-2 py-1">
       <p class="text-white text-lg font-extrabold">
-        {{ rating }}
+        {{ item.rating }}
       </p>
     </div>
     <div
@@ -51,7 +45,7 @@ const goToDetail = () => {
       <div class="h-full items-center text-center text-white relative top-[35%]">
         <p class="mb-3 text-2xl">
           <v-icon name="material-symbols:star-rounded" class="h-8 w-8 text-yellow-500"></v-icon>
-          {{ rating }}
+          {{ item.rating }}
         </p>
         <p class="mb-3 text-lg">Action</p>
         <div>
@@ -63,9 +57,9 @@ const goToDetail = () => {
     </div>
   </div>
   <div class="title font-semibold text-base text-white">
-    {{ title }}
+    {{ item.title }}
   </div>
   <div class="year text-sm text-gray-500">
-    {{ year }}
+    {{ item.year }}
   </div>
 </template>

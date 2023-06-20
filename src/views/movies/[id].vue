@@ -9,6 +9,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const moviesStore = useMoviesStore()
 const movie = ref()
+const movies = ref<any>([])
 
 const id = computed(() => {
   return route.params.id
@@ -16,23 +17,21 @@ const id = computed(() => {
 
 onMounted(() => {
   getMovie()
+  getAllMovie()
 })
 
 const getMovie = () => {
   const res = moviesStore.getMovie(Number(id.value))
   movie.value = res
 }
+
+const getAllMovie = () => {
+  const res = moviesStore.movies
+  movies.value = res.slice(-5)
+}
 </script>
 
 <template>
-  <!-- <div class="header-movie">
-    <div class="px-5 lg:px-20 py-11 pt-52">
-      {{ movie }}
-      <div class="flex">
-        <img src="@/assets/movie.png" />
-      </div>
-    </div>
-  </div> -->
   <div class="header-movie py-6 flex flex-col sm:py-32 max-h-80	">
     <div class="py-3 px-5 lg:px-20">
       <div class="py-4 flex flex-wrap gap-11">
@@ -75,6 +74,17 @@ const getMovie = () => {
           >
           </card-review>
       </template>
+    </div>
+  </div>
+  <div class="recommendation px-5 lg:px-20 py-8">
+    <p class="text-white font-bold text-lg uppercase">Recommendation Movies</p>
+    <div class="py-3 grid grid-cols-5 gap-5 mt-5">
+      <div v-for="item in movies" :key="item.id">
+        <CardMovie
+          :item="item"
+        >
+        </CardMovie>
+      </div>
     </div>
   </div>
 </template>

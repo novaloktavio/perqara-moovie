@@ -199,10 +199,7 @@ const getMovie = () => {
           <div class="grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div v-for="item in movies" :key="item.id">
               <CardMovie
-                :id="item.id"
-                :title="item.title"
-                :rating="item.rating"
-                :year="item.year"
+                :item="item"
               >
               </CardMovie>
             </div>
