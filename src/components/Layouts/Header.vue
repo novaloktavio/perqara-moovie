@@ -85,7 +85,7 @@ const goToMovie = (id: string) => {
 
 <template>
   <nav class="sticky top-0 flex gap-6 items-center justify-between px-20 z-10 flex-wrap bg-grey-darkest p-3 bg-primary-400 shadow-lg">
-		<div class="grow flex items-center flex-no-shrink text-white gap-6">
+		<div class="grow flex flex-wrap items-center flex-no-shrink text-white gap-6">
       <a href="/">
         <img src="@/assets/logo.svg" class="mr-3"/>
       </a>
@@ -100,7 +100,7 @@ const goToMovie = (id: string) => {
           />
           <v-icon name="material-symbols:search-rounded" class="w-6 h-6 text-white" />
           <ComboboxOptions
-            class="absolute top-14 -ml-2 p-4 bg-primary rounded-md text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            class="absolute top-14 -ml-2 p-4 z-10 bg-primary rounded-md text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
           >
             <ComboboxOption
               v-for="movie in filteredMovies"

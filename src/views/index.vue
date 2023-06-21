@@ -62,8 +62,8 @@ const onSlideChange = () => {
     }"
     class="swiper-movie"
   >
-    <swiper-slide v-for="item in movies" :key="item.id">
-      <div class="py-20 flex flex-col justify-center">
+    <swiper-slide v-for="item in movies" :key="item.id" v-slot="{ isActive }">
+      <div class="py-20 flex flex-col justify-center" :class="[!isActive ? 'opacity-50' : '']">
         <div class="py-3 sm:max-w-xl sm:mx-auto">
           <div class="flex flex-wrap md:flex-nowrap">
             <div class="h-48 lg:-mt-6 m-auto overflow-visible w-1/2">
