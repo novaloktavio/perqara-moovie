@@ -32,9 +32,9 @@ const getAllMovie = () => {
 </script>
 
 <template>
-  <div class="header-movie py-6 flex flex-col sm:py-32 max-h-80	">
-    <div class="py-3 px-5 lg:px-20">
-      <div class="py-4 flex flex-wrap gap-11">
+  <div class="header-movie flex flex-col sm:pt-32 max-h-80	">
+    <div class="px-5 lg:px-20">
+      <div class="flex flex-nowrap gap-11">
         <div class="h-1 overflow-visible z-[9]">
             <img src="@/assets/movie.png" alt="">
         </div>
@@ -44,9 +44,52 @@ const getAllMovie = () => {
             <p class="text-3xl font-bold text-white">{{ movie?.title }}</p>
             <p class="text-md">{{ movie?.genre.join(', ') }}</p>
           </div>
-          <div class="flex w-full bg-black bg-opacity-50">
+          <div class="flex w-full bg-black bg-opacity-50 gap-4 p-4 items-center">
             <div class="rating text-white">
-              rating
+              <p class="text-white text-4xl font-extrabold">
+                <v-icon name="material-symbols:star-rounded" class="h-11 w-11 text-yellow-500"></v-icon>
+                {{ movie?.rating || '-' }}
+              </p>
+            </div>
+            <div>
+              <p class="text-white text-sm text-opacity-50 uppercase">
+                User Score
+              </p>
+              <p class="text-white text-sm uppercase">
+                {{ movie?.votes }} Votes
+              </p>
+            </div>
+            <div class="border-l border-opacity-20 border-white pl-2">
+              <p class="text-white text-sm text-opacity-50 uppercase">
+                Status
+              </p>
+              <p class="text-white text-sm uppercase">
+                {{ movie?.status }}
+              </p>
+            </div>
+            <div class="border-l border-opacity-20 border-white pl-2">
+              <p class="text-white text-sm text-opacity-50 uppercase">
+                Language
+              </p>
+              <p class="text-white text-sm uppercase">
+                {{ movie?.language }}
+              </p>
+            </div>
+            <div class="border-l border-opacity-20 border-white pl-2">
+              <p class="text-white text-sm text-opacity-50 uppercase">
+                Budget
+              </p>
+              <p class="text-white text-sm uppercase">
+                {{ movie?.budget }}
+              </p>
+            </div>
+            <div class="border-l border-opacity-20 border-white pl-2">
+              <p class="text-white text-sm text-opacity-50 uppercase">
+                Production
+              </p>
+              <p class="text-white text-sm uppercase">
+                {{ movie?.production }}
+              </p>
             </div>
           </div>
         </div>
