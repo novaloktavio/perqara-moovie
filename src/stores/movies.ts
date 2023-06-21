@@ -6,6 +6,7 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 1,
         title: 'Wonder Woman 1984',
+        image: '/movies/1.png',
         year: '2020',
         rating: '7.0',
         votes: '3621',
@@ -17,14 +18,14 @@ export const useMoviesStore = defineStore('counter', {
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -36,6 +37,7 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 2,
         title: 'Below Zero',
+        image: '/movies/2.png',
         year: '2021',
         rating: '6.4',
         votes: '3621',
@@ -43,18 +45,18 @@ export const useMoviesStore = defineStore('counter', {
         language: 'English',
         budget: '200000000',
         production: 'DC Entertaintment',
-        genre: ['Fantasy', 'Action', 'Adventure'],
+        genre: ['Adventure', 'Action', 'Fantasy'],
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -66,6 +68,7 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 3,
         title: 'The Little Things',
+        image: '/movies/3.png',
         year: '2021',
         rating: '6.3',
         votes: '3621',
@@ -77,14 +80,14 @@ export const useMoviesStore = defineStore('counter', {
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -96,6 +99,7 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 4,
         title: 'Outside the Wire',
+        image: '/movies/4.png',
         year: '2021',
         rating: '6.5',
         votes: '3621',
@@ -103,18 +107,18 @@ export const useMoviesStore = defineStore('counter', {
         language: 'English',
         budget: '200000000',
         production: 'DC Entertaintment',
-        genre: ['Fantasy', 'Action', 'Adventure'],
+        genre: ['Action', 'Fantasy', 'Adventure'],
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -126,6 +130,7 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 5,
         title: 'Black Water: Abyss',
+        image: '/movies/5.png',
         year: '2020',
         rating: '5.1',
         votes: '3621',
@@ -133,18 +138,18 @@ export const useMoviesStore = defineStore('counter', {
         language: 'English',
         budget: '200000000',
         production: 'DC Entertaintment',
-        genre: ['Fantasy', 'Action', 'Adventure'],
+        genre: ['Action', 'Fantasy', 'Adventure'],
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -156,8 +161,40 @@ export const useMoviesStore = defineStore('counter', {
       {
         id: 6,
         title: 'Breach',
+        image: '/movies/6.png',
         year: '2021',
         rating: '4.6',
+        votes: '3621',
+        status: 'Released',
+        language: 'English',
+        budget: '200000000',
+        production: 'DC Entertaintment',
+        genre: ['Sci-Fi', 'Fantasy', 'Action', 'Adventure'],
+        overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
+        reviews: [
+          {
+            id: 11,
+            name: 'SWITCH.',
+            date: 'December 18, 2020',
+            rate: '7.0',
+            review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
+          },
+          {
+            id: 12,
+            name: 'msbreviews',
+            date: 'December 18, 2020',
+            rate: '8.0',
+            review: `If you enjoy reading my Spoiler-Free reviews, please follow my blog @ https://www.msbreviews.com
+            The superhero genre has been growing exponentially during the last decade, so it's bizarre to go through an entire year with only Birds of Prey and The New Mutants instead of literally dozens of films from both Marvel and DC. Thankfully, Warner Bros. decided to release Wonder Woman 1984 before the year's end, but not without a catch. Most people will only have the possibility of watching one of the few blockbusters of 2020 through HBO Max, a streaming service only`,
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: 'Soul',
+        image: '/movies/7.png',
+        year: '2020',
+        rating: '8.3',
         votes: '3621',
         status: 'Released',
         language: 'English',
@@ -167,14 +204,107 @@ export const useMoviesStore = defineStore('counter', {
         overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
         reviews: [
           {
-            id: 7,
+            id: 11,
             name: 'SWITCH.',
             date: 'December 18, 2020',
             rate: '7.0',
             review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
           },
           {
-            id: 8,
+            id: 12,
+            name: 'msbreviews',
+            date: 'December 18, 2020',
+            rate: '8.0',
+            review: `If you enjoy reading my Spoiler-Free reviews, please follow my blog @ https://www.msbreviews.com
+            The superhero genre has been growing exponentially during the last decade, so it's bizarre to go through an entire year with only Birds of Prey and The New Mutants instead of literally dozens of films from both Marvel and DC. Thankfully, Warner Bros. decided to release Wonder Woman 1984 before the year's end, but not without a catch. Most people will only have the possibility of watching one of the few blockbusters of 2020 through HBO Max, a streaming service only`,
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: 'Fast & Furious Presents Hobbs & Shaw',
+        image: '/movies/8.png',
+        year: '2019',
+        rating: '6.9',
+        votes: '3621',
+        status: 'Released',
+        language: 'English',
+        budget: '200000000',
+        production: 'DC Entertaintment',
+        genre: ['Action', 'Fantasy', 'Adventure'],
+        overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
+        reviews: [
+          {
+            id: 11,
+            name: 'SWITCH.',
+            date: 'December 18, 2020',
+            rate: '7.0',
+            review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
+          },
+          {
+            id: 12,
+            name: 'msbreviews',
+            date: 'December 18, 2020',
+            rate: '8.0',
+            review: `If you enjoy reading my Spoiler-Free reviews, please follow my blog @ https://www.msbreviews.com
+            The superhero genre has been growing exponentially during the last decade, so it's bizarre to go through an entire year with only Birds of Prey and The New Mutants instead of literally dozens of films from both Marvel and DC. Thankfully, Warner Bros. decided to release Wonder Woman 1984 before the year's end, but not without a catch. Most people will only have the possibility of watching one of the few blockbusters of 2020 through HBO Max, a streaming service only`,
+          },
+        ],
+      },
+      {
+        id: 9,
+        title: 'The Croods: A New Age',
+        image: '/movies/9.png',
+        year: '2020',
+        rating: '7.6',
+        votes: '3621',
+        status: 'Released',
+        language: 'English',
+        budget: '200000000',
+        production: 'DC Entertaintment',
+        genre: ['Fantasy', 'Action', 'Adventure'],
+        overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
+        reviews: [
+          {
+            id: 11,
+            name: 'SWITCH.',
+            date: 'December 18, 2020',
+            rate: '7.0',
+            review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
+          },
+          {
+            id: 12,
+            name: 'msbreviews',
+            date: 'December 18, 2020',
+            rate: '8.0',
+            review: `If you enjoy reading my Spoiler-Free reviews, please follow my blog @ https://www.msbreviews.com
+            The superhero genre has been growing exponentially during the last decade, so it's bizarre to go through an entire year with only Birds of Prey and The New Mutants instead of literally dozens of films from both Marvel and DC. Thankfully, Warner Bros. decided to release Wonder Woman 1984 before the year's end, but not without a catch. Most people will only have the possibility of watching one of the few blockbusters of 2020 through HBO Max, a streaming service only`,
+          },
+        ],
+      },
+      {
+        id: 10,
+        title: 'Vanguard',
+        image: '/movies/1.png',
+        year: '2020',
+        rating: '6.3',
+        votes: '3621',
+        status: 'Released',
+        language: 'English',
+        budget: '200000000',
+        production: 'DC Entertaintment',
+        genre: ['Fantasy', 'Action', 'Adventure'],
+        overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah.',
+        reviews: [
+          {
+            id: 11,
+            name: 'SWITCH.',
+            date: 'December 18, 2020',
+            rate: '7.0',
+            review: `It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie. The pieces are there, and there are moments I adore, but it does come across as a bit of a mess, even though the action sequences are breathtaking. If you're a fan of the original film, you'll be more willing to take the ride, but for those more indifferent, it may be a bit of a blander sit. If you can and are planning to watch it, the theatrical experience is the way to go - there is nothing like seeing these stunning sets, fun action scenes and hearing Zimmer's jaw-dropping score like on the big screen. - Chris dos Santos`,
+          },
+          {
+            id: 12,
             name: 'msbreviews',
             date: 'December 18, 2020',
             rate: '8.0',
@@ -186,7 +316,6 @@ export const useMoviesStore = defineStore('counter', {
     ],
   }),
   getters: {
-    doubleCount: (state) => state.count * 2,
   },
   actions: {
     getMovie(id: number) {

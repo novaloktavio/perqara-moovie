@@ -32,11 +32,11 @@ const getAllMovie = () => {
 </script>
 
 <template>
-  <div class="header-movie flex flex-col sm:pt-32 max-h-80	">
+  <div class="header-movie flex flex-col sm:pt-32 max-h-80">
     <div class="px-5 lg:px-20">
       <div class="flex flex-nowrap gap-11">
         <div class="h-1 overflow-visible z-[9]">
-            <img src="@/assets/movie.png" alt="">
+            <img :src="`/movies/${movie?.id}.png?url`" alt="">
         </div>
         <div class="flex flex-col grow space-y-4">
           <div class="text-white">

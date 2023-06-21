@@ -13,7 +13,7 @@ import {
   ListboxOption,
 } from '@headlessui/vue'
 
-const people = [
+const popularities = [
   { name: 'Popularity Ascending' },
   { name: 'Popularity Descending' },
   { name: 'Release Date Ascending' },
@@ -71,7 +71,7 @@ const genres = [
 const route = useRoute()
 const moviesStore = useMoviesStore()
 const movies = ref()
-const selectedPerson = ref<any>({})
+const category = ref<any>({})
 
 onMounted(() => {
   getMovie()
@@ -97,13 +97,13 @@ const getMovie = () => {
             <div class="text-left mb-3 px-5">
               <p class="text-white font-bold text-base">Sort Result By</p>
             </div>
-            <Listbox v-model="selectedPerson" class="p-5 border-y border-white border-opacity-5" v-slot="{ open }">
+            <Listbox v-model="category" class="p-5 border-y border-white border-opacity-5" v-slot="{ open }">
               <div class="relative mt-1">
                 <ListboxButton
                   class="relative w-full cursor-pointer rounded-lg bg-grey-400 bg-opacity-10 py-2 pl-3 pr-10 text-left sm:text-sm"
                 >
                   <span class="block truncate text-white">
-                    {{ selectedPerson.name || 'Popularity' }}
+                    {{ category.name || 'Popularity' }}
                   </span>
                   <span
                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-white"
@@ -123,9 +123,9 @@ const getMovie = () => {
                   >
                     <ListboxOption
                       v-slot="{ active, selected }"
-                      v-for="person in people"
-                      :key="person.name"
-                      :value="person"
+                      v-for="popularity in popularities"
+                      :key="popularity.name"
+                      :value="popularity"
                       as="template"
                     >
                       <li
@@ -141,7 +141,7 @@ const getMovie = () => {
                             selected ? 'font-extrabold' : 'font-normal',
                             'block truncate',
                           ]"
-                          >{{ person.name }}</span
+                          >{{ popularity.name }}</span
                         >
                       </li>
                     </ListboxOption>

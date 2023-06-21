@@ -67,7 +67,7 @@ const onSlideChange = () => {
         <div class="py-3 sm:max-w-xl sm:mx-auto">
           <div class="flex flex-wrap md:flex-nowrap">
             <div class="h-48 lg:-mt-6 m-auto overflow-visible w-1/2">
-                <img class="shadow-lg" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1LRLLWGvs5sZdTzuMqLEahb88Pc.jpg" alt="">
+              <img class="shadow-lg" :src="`/movies/${item.id}.png?url`" alt="">
             </div>
             <div class="flex flex-col bg-black p-4 w-full h-100">
               <div>
@@ -79,12 +79,6 @@ const onSlideChange = () => {
               <p class="text-white">
                 {{ item.overview }}
               </p>
-              <!-- <div>
-                <div class="text-sm text-gray-400">Series</div>
-                <div class="text-lg text-gray-800">2019</div>
-              </div>
-                <p class=" text-gray-400 max-h-40 overflow-y-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="flex text-2xl font-bold text-a">$83.90</div> -->
             </div>
 
           </div>

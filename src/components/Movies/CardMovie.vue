@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { toRefs } from "vue"
+import { toRefs, ref } from "vue"
 import VButton from '../VButton/index.vue'
 import VIcon from '../VIcon/VIcon.vue'
 import router from '@/router'
@@ -22,6 +22,15 @@ const { item } = toRefs(props)
 const goToDetail = () => {
   router.push(`/movies/${item.value.id}`)
 }
+const imageUrl = ref('');
+
+const getImgUrl = async (path: string) => {
+  // @vite-ignore
+  const imageModule = await import(/* @vite-ignore */ `/${item.value.id}.png`);
+  imageUrl.value = imageModule.default || imageModule;
+};
+
+getImgUrl(item.value.id);
 </script>
 
 <template>
@@ -30,7 +39,7 @@ const goToDetail = () => {
     data-te-ripple-init
     data-te-ripple-color="light">
     <img
-      src="@/assets/movie.png"
+      :src="`/movies/${item.id}.png?url`"
       class="w-full"
     />
     <div class="absolute right-0 top-0 text-right bg-primary bg-opacity-80 px-2 py-1">
@@ -47,7 +56,7 @@ const goToDetail = () => {
           <v-icon name="material-symbols:star-rounded" class="h-8 w-8 text-yellow-500"></v-icon>
           {{ item.rating }}
         </p>
-        <p class="mb-3 text-lg">Action</p>
+        <p class="mb-3 text-lg">{{ item.genre[0] }}</p>
         <div>
           <v-button variant="secondary" rounded class="uppercase !px-8">
             View
